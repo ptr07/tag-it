@@ -83,6 +83,14 @@
                 alert('This tag is being added: ' + eventTags.tagit('tagLabel', tag));
             });
 
+
+             //-------------------------------
+            // Tag-it methods
+            //-------------------------------
+            $('#readOnlyTags').tagit({
+			    readOnly: true
+		    });
+
             //-------------------------------
             // Tag-it methods
             //-------------------------------
@@ -198,6 +206,20 @@
 	    </form>
 
         <hr>
+        
+        <h3>ReadOnly</h3>
+   	    <form>
+			<p>Example of read only tags.</p>
+			<ul id="readOnlyTags">
+                <li>Tag1</li>
+                <li>Tag2</li>
+            </ul>
+			
+	    </form>
+
+        <hr>
+        
+        
         <h3>Methods</h3>
    	    <form>
 			<p>Demos the available widget methods. Click the links below the widget to try them.</p>
